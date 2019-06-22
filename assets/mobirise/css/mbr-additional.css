@@ -3002,7 +3002,7 @@ body {
 .cid-rsg3X7m1fl {
   padding-top: 0px;
   padding-bottom: 0px;
-  background-color: #ffffff;
+  background-color: #465052;
 }
 .cid-rsg3X7m1fl .mbr-slider .carousel-control {
   background: #1b1b1b;
@@ -3144,26 +3144,26 @@ body {
 .cid-rqmXAgbWUC .mbr-text {
   text-align: left;
 }
-.cid-rqmY9LDRS0 {
+.cid-ru7Hjc2nKk {
   padding-top: 0px;
   padding-bottom: 0px;
-  background-color: #465052;
+  background-color: #232323;
 }
-.cid-rqmY9LDRS0 .mbr-slider .carousel-control {
+.cid-ru7Hjc2nKk .mbr-slider .carousel-control {
   background: #1b1b1b;
 }
-.cid-rqmY9LDRS0 .mbr-slider .carousel-control-prev {
+.cid-ru7Hjc2nKk .mbr-slider .carousel-control-prev {
   left: 0;
   margin-left: 2.5rem;
 }
-.cid-rqmY9LDRS0 .mbr-slider .carousel-control-next {
+.cid-ru7Hjc2nKk .mbr-slider .carousel-control-next {
   right: 0;
   margin-right: 2.5rem;
 }
-.cid-rqmY9LDRS0 .mbr-slider .modal-body .close {
+.cid-ru7Hjc2nKk .mbr-slider .modal-body .close {
   background: #1b1b1b;
 }
-.cid-rqmY9LDRS0 .mbr-gallery-item > div::before {
+.cid-ru7Hjc2nKk .mbr-gallery-item > div::before {
   content: '';
   position: absolute;
   left: 0;
@@ -3176,13 +3176,13 @@ body {
   transition: 0.2s opacity ease-in-out;
   background: linear-gradient(to left, #554346, #45505b) !important;
 }
-.cid-rqmY9LDRS0 .mbr-gallery-item > div:hover .mbr-gallery-title::before {
+.cid-ru7Hjc2nKk .mbr-gallery-item > div:hover .mbr-gallery-title::before {
   background: transparent !important;
 }
-.cid-rqmY9LDRS0 .mbr-gallery-item > div:hover:before {
+.cid-ru7Hjc2nKk .mbr-gallery-item > div:hover:before {
   opacity: 0.7 !important;
 }
-.cid-rqmY9LDRS0 .mbr-gallery-title {
+.cid-ru7Hjc2nKk .mbr-gallery-title {
   font-size: .9em;
   position: absolute;
   display: block;
@@ -3192,7 +3192,7 @@ body {
   color: #fff;
   z-index: 2;
 }
-.cid-rqmY9LDRS0 .mbr-gallery-title:before {
+.cid-ru7Hjc2nKk .mbr-gallery-title:before {
   content: " ";
   width: 100%;
   height: 100%;
@@ -3209,7 +3209,7 @@ body {
 .cid-rqmm6rm5Tb {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #465052;
+  background-color: #232323;
 }
 .cid-rocjbf4Dwk {
   padding-top: 60px;
