@@ -3144,26 +3144,26 @@ body {
 .cid-rqmXAgbWUC .mbr-text {
   text-align: left;
 }
-.cid-ru7Hjc2nKk {
+.cid-ru7Mi35qzB {
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: #232323;
 }
-.cid-ru7Hjc2nKk .mbr-slider .carousel-control {
+.cid-ru7Mi35qzB .mbr-slider .carousel-control {
   background: #1b1b1b;
 }
-.cid-ru7Hjc2nKk .mbr-slider .carousel-control-prev {
+.cid-ru7Mi35qzB .mbr-slider .carousel-control-prev {
   left: 0;
   margin-left: 2.5rem;
 }
-.cid-ru7Hjc2nKk .mbr-slider .carousel-control-next {
+.cid-ru7Mi35qzB .mbr-slider .carousel-control-next {
   right: 0;
   margin-right: 2.5rem;
 }
-.cid-ru7Hjc2nKk .mbr-slider .modal-body .close {
+.cid-ru7Mi35qzB .mbr-slider .modal-body .close {
   background: #1b1b1b;
 }
-.cid-ru7Hjc2nKk .mbr-gallery-item > div::before {
+.cid-ru7Mi35qzB .mbr-gallery-item > div::before {
   content: '';
   position: absolute;
   left: 0;
@@ -3176,13 +3176,13 @@ body {
   transition: 0.2s opacity ease-in-out;
   background: linear-gradient(to left, #554346, #45505b) !important;
 }
-.cid-ru7Hjc2nKk .mbr-gallery-item > div:hover .mbr-gallery-title::before {
+.cid-ru7Mi35qzB .mbr-gallery-item > div:hover .mbr-gallery-title::before {
   background: transparent !important;
 }
-.cid-ru7Hjc2nKk .mbr-gallery-item > div:hover:before {
+.cid-ru7Mi35qzB .mbr-gallery-item > div:hover:before {
   opacity: 0.7 !important;
 }
-.cid-ru7Hjc2nKk .mbr-gallery-title {
+.cid-ru7Mi35qzB .mbr-gallery-title {
   font-size: .9em;
   position: absolute;
   display: block;
@@ -3192,7 +3192,7 @@ body {
   color: #fff;
   z-index: 2;
 }
-.cid-ru7Hjc2nKk .mbr-gallery-title:before {
+.cid-ru7Mi35qzB .mbr-gallery-title:before {
   content: " ";
   width: 100%;
   height: 100%;

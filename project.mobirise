@@ -36,7 +36,7 @@
     "path": "@PROJECT_PATH@",
     "siteFonts": [],
     "versionFirst": "4.7.6",
-    "uniqCompNum": 92,
+    "uniqCompNum": 93,
     "versionPublish": "4.10.4",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/favicon.ico",
@@ -4089,10 +4089,7 @@
           },
           "_name": "gallery3",
           "_customHTML": "<section class=\"mbr-gallery mbr-slider-carousel\" group=\"Sliders & Gallery\" plugins=\"Masonry,BootstrapCarouselSwipe,Gallery,VimeoPlayer,SliderVideo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#554346\">\n        <input type=\"checkbox\" title=\"Gradient Overlay\" name=\"gradOverlay\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"overlayColor2\" value=\"#45505b\" condition=\"gradOverlay\">\n        <input type=\"range\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" inline>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#232323\">\n\n        <input type=\"gallery\" title=\"Gallery\" name=\"gallery\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-gallery=\"gallery\"></div>\n    </div>\n\n</section>",
-          "_anchor": "gallery3-2j",
-          "_isUserblock": true,
-          "_sourceTheme": "mobirise4",
-          "_cid": "ru7Hjc2nKk",
+          "_cid": "ru7Mi35qzB",
           "_protectedParams": [
             "text_all",
             "gallery__filtersTextStyle",
@@ -4107,20 +4104,7 @@
             "gallery__filtersBtnStyle": "btn-primary-outline",
             "gallery": [
               {
-                "tags": "Super",
-                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/koper6-1000x562.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/koper6-1000x562-800x450.jpg",
-                "alt": "",
-                "title": "",
-                "customStyle1": "display-7",
-                "caption": "Vnesite napis tukaj",
-                "active": true
-              },
-              {
-                "tags": "Super",
+                "tags": "Animirano",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
@@ -4130,10 +4114,10 @@
                 "title": "",
                 "customStyle1": "display-7",
                 "caption": "Vnesite napis tukaj",
-                "active": false
+                "active": true
               },
               {
-                "tags": "Super",
+                "tags": "Animirano",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
@@ -4146,12 +4130,25 @@
                 "active": false
               },
               {
-                "tags": "Super",
+                "tags": "Animirano",
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/koper2-1024x768.jpg",
-                "thumb": "@PROJECT_PATH@/assets/images/koper2-1024x768-800x546.jpg",
+                "image": "@PROJECT_PATH@/assets/images/koper2-2-1024x768.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/koper2-2-1024x768-800x542.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Vnesite napis tukaj",
+                "active": false
+              },
+              {
+                "tags": "Animirano",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/koperponoci01-960x640.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/koperponoci01-960x640-800x533.jpg",
                 "alt": "",
                 "title": "",
                 "customStyle1": "display-7",
@@ -4159,7 +4156,8 @@
                 "active": false
               }
             ]
-          }
+          },
+          "_anchor": "gallery3-2k"
         },
         {
           "alias": false,
