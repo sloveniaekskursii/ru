@@ -36,7 +36,7 @@
     "path": "@PROJECT_PATH@",
     "siteFonts": [],
     "versionFirst": "4.7.6",
-    "uniqCompNum": 93,
+    "uniqCompNum": 94,
     "versionPublish": "4.10.4",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/favicon.ico",
@@ -61,36 +61,44 @@
               "padding-bottom": "(@paddingBottom * 15px)"
             },
             "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
+              "background-color": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(45deg, @bg-value, @color2)"
+              }
             },
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
             },
-            "h1": {
-              "color": "#616161"
+            "& when (@reverseContent)": {
+              ".media-container-row": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse"
+              }
             },
-            "h2, h3, p": {
-              "color": "#767676"
+            ".mbr-figure": {
+              "@media (min-width: 992px)": {
+                "padding-right": "4rem",
+                "& when (@reverseContent)": {
+                  "padding-right": "0",
+                  "padding-left": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                "padding-bottom": "3rem"
+              }
             },
-            ".mbr-section-subtitle": {
-              "font-style": "italic"
-            },
-            "H1": {
-              "color": "#232323"
-            },
-            "H3": {
-              "color": "#232323"
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#232323"
+            ".mbr-text": {
+              "@media (max-width: 767px)": {
+                "text-align": "center"
+              }
             }
           },
-          "_name": "header9",
-          "_customHTML": "<section class=\"header9\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n\n        <input type=\"checkbox\" name=\"halfSize\" title=\"Half Size\">\n        <select title=\"Align\" name=\"alignHalf\" condition=\"halfSize\">\n            <option value=\"1\" selected>Left</option>\n            <option value=\"2\">Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/moskva-101-2000x1500.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-column mbr-white\" mbr-class=\"{'col-lg-8 col-md-10': halfSize, 'm-auto': halfSize &&  alignHalf==2, 'ml-auto': halfSize &&  alignHalf==3}\">\n            <h1 class=\"mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><span style=\"font-weight: normal;\">Деян Мантароски</span></h1>\n            <h3 class=\"mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">Ваш гид по Словении<br><br><br><br><br><br><br><br><br><br><br></h3>\n            <p class=\"mbr-text align-left pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                Click any text to edit or style it. Select text to insert a link. Click blue \"Gear\" icon in the top right corner to hide/show buttons, text, title and change the block background. Click red \"+\" in the bottom right corner to add a new block. Use the top left menu to create new pages, sites and add themes.\n            </p>\n            <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-primary\" href=\"index.html#content7-2h\" data-app-placeholder=\"Type Text\">ПОЕЗДКИ</a> <a class=\"btn btn-md btn-black-outline\" href=\"page15.html\" data-app-placeholder=\"Type Text\">интересно о Словении</a> \n                 <a class=\"btn btn-md btn-black-outline\" href=\"index.html#form1-p\" data-app-placeholder=\"Type Text\">КОНТАКТ</a></div>\n        </div>\n    </div>\n\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
-          "_anchor": "header9-2l",
+          "_name": "header3",
+          "_customHTML": "<section class=\"header3\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n    \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"70\">\n        <input type=\"checkbox\" title=\"Media On Left/Right\" name=\"reverseContent\" checked>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/slovenija-danes-slika-2-960x800.jpg\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#149dcc\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"bg.type == 'color'\" checked>\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#232323\" condition=\"gradientBg && bg.type == 'color'\">\n        \n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                <img src=\"@PROJECT_PATH@/assets/images/moskva-101-1380x1035.jpg\" alt=\"Mobirise\" title>\n            </div>\n\n            <div class=\"media-content\">\n                <h1 class=\"mbr-section-title mbr-white pb-3 mbr-fonts-style\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\">Деян Мантароски</h1>\n                <h3 class=\"mbr-section-subtitle align-left mbr-white mbr-light pb-3 mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-2\">\n                    Beautiful mobile websites\n                </h3>\n                <div class=\"mbr-section-text mbr-white pb-3 \">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-5\">\n                        Ваш гид по Словении\n                    </p>\n                </div>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-primary\" href=\"index.html#content7-2h\" data-app-placeholder=\"Type Text\">ПОЕЗДКИ</a>\n                    <a class=\"btn btn-md btn-white-outline\" href=\"page15.html\" data-app-placeholder=\"Type Text\">интересно о Словении</a> <a class=\"btn btn-md btn-white-outline\" href=\"index.html#form1-p\" data-app-placeholder=\"Type Text\">КОНТАКТ</a></div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_anchor": "header3-2l",
           "_isUserblock": true,
           "_sourceTheme": "mobirise4",
-          "_cid": "rsdtVSeipP",
+          "_cid": "ruSieCKg9l",
           "_protectedParams": [],
           "_global": false,
           "_once": false,

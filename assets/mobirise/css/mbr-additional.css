@@ -1325,29 +1325,31 @@ body {
   background: #ff3366 !important;
   box-shadow: none !important;
 }
-.cid-rsdtVSeipP {
-  background-image: url("../../../assets/images/moskva-101-2000x1500.jpg");
+.cid-ruSieCKg9l {
+  padding-top: 45px;
+  padding-bottom: 60px;
+  background-image: url("../../../assets/images/slovenija-danes-slika-2-960x800.jpg");
 }
-.cid-rsdtVSeipP h1 {
-  color: #616161;
+.cid-ruSieCKg9l .media-container-row {
+  flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
 }
-.cid-rsdtVSeipP h2,
-.cid-rsdtVSeipP h3,
-.cid-rsdtVSeipP p {
-  color: #767676;
+@media (min-width: 992px) {
+  .cid-ruSieCKg9l .mbr-figure {
+    padding-right: 4rem;
+    padding-right: 0;
+    padding-left: 4rem;
+  }
 }
-.cid-rsdtVSeipP .mbr-section-subtitle {
-  font-style: italic;
+@media (max-width: 991px) {
+  .cid-ruSieCKg9l .mbr-figure {
+    padding-bottom: 3rem;
+  }
 }
-.cid-rsdtVSeipP H1 {
-  color: #232323;
-}
-.cid-rsdtVSeipP H3 {
-  color: #232323;
-}
-.cid-rsdtVSeipP .mbr-text,
-.cid-rsdtVSeipP .mbr-section-btn {
-  color: #232323;
+@media (max-width: 767px) {
+  .cid-ruSieCKg9l .mbr-text {
+    text-align: center;
+  }
 }
 .cid-rocbgDAd8O {
   padding-top: 90px;
