@@ -46,8 +46,8 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
-        "meta_descr": "",
+        "title": "Деян Мантароски, Ваш гид по Словении",
+        "meta_descr": "Мы предлагаем вам отправится в путешествие по удивительной Словении на автомобиле с русскоговорящим гидом словенцем - Деяном Мантароски.",
         "header_custom": "",
         "footer_custom": "",
         "html_before": ""
@@ -4809,7 +4809,7 @@
     "page15.html": {
       "settings": {
         "meta_descr": "Site Builder Description",
-        "title": "Razno",
+        "title": "Интересное о Словении...",
         "order": 1
       },
       "components": [
