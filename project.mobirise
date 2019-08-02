@@ -40,7 +40,12 @@
     "versionPublish": "4.10.4",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/favicon.ico",
-    "noImageResize": ""
+    "noImageResize": "",
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\n\n",
+    "robotsSwitcher": "on",
+    "siteUrl": "https://sloveniaekskursii.github.io/ru/dejanmantaroski.html",
+    "sitemapSwitcherAuto": "",
+    "sitemapSwitcher": "on"
   },
   "pages": {
     "zanimivosti.html": {
